@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-testing
+    ports:
+      - "8080:80"          # http://localhost:8080
+    volumes:
+      - ./.docker/nginx_default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx_server:/var/www/html
+    depends_on:
+      - php
+
+  php:
+    image: php:fpm
+    container_name: php-fpm-testing
+    working_dir: /var/www/html
+    volumes:
+      - ./nginx_server:/var/www/html

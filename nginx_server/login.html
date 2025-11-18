@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>¡Bienvenido doBinguero! </h1>
+  <p class="texto-login">A continuación, introduce el código de acceso enviado a tu correo.
+  <br>Antes de acceder, lee atentamente las instrucciones:
+  <ol><li>Aparecerán 8 canciones que deberás reproducir clicando en el play y escuchar atentamente para adivinar qué tema es.</li>
+  <li>Cuando sepas el nombre de la pista (solamente el nombre de la canción, el grupo no importa), escríbela en el campo correspondiente.</li>
+  <li>Una vez tengas todas las respuestas, clica en Enviar.</li>
+  <li>Podrás visualizar los aciertos que has tenido, el tiempo que has tardado y la posición del ranking que ocupas.</li>
+  <li>Los 3 mejores tendrán un lugar asegurado en la Gran Final, que tendrá lugar en la cena de Navidad y podrá optar a un premio que, créeme, querrás conseguir.</li>
+  </ol> 
+  Y ten muy en cuenta las reglas del juego:
+  <ul><li>Solamente podrás acceder una vez, así que asegúrate de tener un rato libre donde nadie te moleste y buena conexión a internet.</li>
+  <li>Cuando accedas, si actualizas la página para resetear el contador, se te penalizará con 0 aciertos.</li>
+  <li>Cuando llegues a la página de los resultados, si vuelves atrás en el navegador para volver a jugar, sólo se guarda la primera partida, así que lo harás en vano.</li>
+  </ul>
+  ¡Así que no seas pirata y juega limpio!</p>
+
+  <form id="loginForm">
+    <label for="nombre">Código de acceso:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <button type="submit">Acceder</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
