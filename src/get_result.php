@@ -52,11 +52,6 @@
 
     fclose($file);
 
-    // Evitar caché
-    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-    header("Expires: 0");
-    header("Pragma: no-cache");
-
     // enviar la respuestca como un json
     header('Content-type: application/json; charset=UTF-8');  
     echo json_encode($jsonArray, JSON_PRETTY_PRINT);
