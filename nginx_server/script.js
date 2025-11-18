@@ -2,12 +2,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- Códigos asociados a nombres ---
   const codigosUsuarios = {
-    XJU4A: "Ana",
-    GHA9B: "Guillermo",
-    LPO7X: "Guillo",
-    JNF3Z: "Jenifer",
-    FDR8T: "Fernando",
-    DNA2M: "Daniela",
+    codigo1: "Ana",
+    codigo2: "Guillermo",
+    codigo3: "Guillo",
+    codigo4: "Jenifer",
+    codigo5: "Fernando",
+    codigo6: "Daniela",
   };
 
   // --- Página login.html ---

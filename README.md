@@ -1,15 +1,17 @@
 # 📄 Backend para almacenamiento de resultados por usuario (doBinguero)
 
-## 📘 Descripción del proyecto 
+Este es un pequeño backend desarrollado para un **bingo interno entre empleados de [Omnitel](https://omnitel.es/)**, pensado para gestionar y almacenar de forma sencilla los resultados enviados por los participantes.
 
-Este proyecto proporciona un backend sencillo en PHP (los ficheros de ./src) que permite
-almacenar y consultar resultados enviados por los usuarios de un
-formulario.
+## 📘 Descripción del proyecto
 
-Cada usuario puede registrar **un único resultado**, el cual se almacena
-en un archivo `resultados.csv`.\
-El sistema valida automáticamente el archivo, crea encabezados si no
-existen y evita registros duplicados.
+El backend, implementado en **PHP** (archivos dentro de `./src`), permite:
+
+- Almacenar y consultar resultados enviados desde un formulario.
+- Registrar **un único resultado por usuario**.
+- Guardar los datos en un archivo `resultados.csv`.
+- Validar automáticamente el fichero: crear encabezados si no existen y evitar entradas duplicadas.
+
+El objetivo del proyecto era ofrecer una solución rápida y funcional para un evento interno, priorizando la simplicidad, la integridad de datos y la facilidad de despliegue.
 
 ------------------------------------------------------------------------
 
